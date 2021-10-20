@@ -267,9 +267,6 @@
   .hero__description {
     font-size: 40px;
   }
-  .hero__container {
-    max-width: 768px;
-  }
 }
 
 /* Services Section */

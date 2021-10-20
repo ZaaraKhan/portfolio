@@ -41,7 +41,6 @@ const highlightMenu = () => {
     elem.classList.remove("highlight");
   }
 };
-
 window.addEventListener("scroll", highlightMenu);
 window.addEventListener("click", highlightMenu);
 //Close Mobile Menu when clicking on menu item
