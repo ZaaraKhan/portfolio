@@ -267,8 +267,10 @@
   .hero__description {
     font-size: 40px;
   }
+}
+@media screen and (max-width: 480px) {
   .hero__container {
-    max-width: 768px;
+    max-width: 480px;
   }
 }
 
