@@ -194,7 +194,7 @@
 .hero {
   background: #f9f6f1;
   background: linear-gradient(to right, #f9f6f1, #f9f6f1);
-  padding: 200px 0;
+  padding: 100px 0;
 }
 
 .hero__container {
@@ -256,9 +256,11 @@
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
+
 .hero__img--container {
   text-align: center;
 }
+
 .hero__img--container img {
   height: 400px;
 }
@@ -268,11 +270,14 @@
 }
 
 @media screen and (max-width: 768px) {
+  .hero {
+    padding-bottom: 10px;
+  }
   .hero__container {
     padding: 0 50px;
   }
   .hero__heading {
-    font-size: 50px;
+    font-size: 30px;
   }
   .hero__description {
     font-size: 20px;
@@ -366,6 +371,7 @@
     #d3959b
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
 .services__card:nth-child(3) {
   background: #cc95c0; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -413,6 +419,7 @@
   justify-content: center;
   margin-top: 16px;
 }
+
 .services__card button {
   color: #0d1821;
   padding: 14px 24px;
@@ -469,9 +476,19 @@
 }
 
 .main__content h1 {
-  font-size: 2rem;
-  background-color: #0d1821;
-  background-image: linear-gradient(to top, #7699d4 0%, #0d1821 100%);
+  font-size: 4rem;
+  /* background-color: #0d1821; */
+  background: #91c499; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #7699d4,
+    #91c499
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #7699d4,
+    #91c499
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -507,11 +524,12 @@
   margin-top: 1rem;
   font-size: 2rem;
   font-weight: 700;
+  text-align: center;
 }
 
 .main__btn {
   font-size: 1.8rem;
-  background: ##91c499; /* fallback for old browsers */
+  background: #91c499; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
     #7699d4,
@@ -533,8 +551,13 @@
   position: relative;
   transition: all 0.35s;
   outline: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-
+.btnwrap {
+  text-align: center;
+}
 .main__btn a {
   position: relative;
   z-index: 2;
