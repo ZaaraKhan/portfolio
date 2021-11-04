@@ -329,7 +329,6 @@
   grid-template-rows: 1fr;
 }
 .services__card {
-  text-decoration: none;
   font-family: Helvetica;
   margin: 10px;
   height: 425px;
@@ -339,6 +338,7 @@
   flex-direction: column;
   justify-content: center;
   color: #f9f6f1;
+  text-decoration: none;
   background: #e1eec3; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
