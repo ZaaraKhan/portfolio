@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harvestly</title>
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar Section -->
+  
+  <nav class="navbarH">
+    <div class="navbar__container">
+      <a href="/./index.html" id="navbar__logo"
+        ><img src="ZAARA logo.png" alt="Zaara Khan"
+      /></a>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span><span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__item">
+          <a href="/./index.html" class="navbar__links" id="home-page">Home</a>
+        </li>
+        <li class="navbar__item">
+          <a
+            href="/./index.html#projects"
+            class="navbar__links"
+            id="projects-page"
+            >Projects</a
+          >
+        </li>
+        <li class="navbar__item">
+          <a href="/./index.html#about" class="navbar__links" id="about-page"
+            >About</a
+          >
+        </li>
+
+        <li class="navbar__btn">
+          <a href="#resume" class="button" id="resume">Resumé</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="section">
+    <div class="img__container" id="intro">
+      <div class="img__container--intro">
+        <img src="/harvestly/harvestly logo.png" alt="" id="logo" />
+      </div>
+      <div class="img__container--intro">
+        <img src="/harvestly/feed.png" alt="" id="feed" />
+      </div>
+    </div>
+<div class="content">
+    <h1>Harvestly</h1>
+    <p>
+      The outbreak of COVID-19 changed every facet of life around the world. In
+      the United States,
+      <a
+        href="https://www.pewresearch.org/fact-tank/2020/06/11/unemployment-rose-higher-in-three-months-of-covid-19-than-it-did-in-two-years-of-the-great-recession/#:~:text=Unemployment%20rose%20higher%20in%20three,years%20of%20the%20Great%20Recession&text=The%20COVID%2D19%20outbreak%20and,20.5%20million%20in%20May%202020."
+        >unemployment rose more in the first three months of the pandemic than
+        in two years of the Great Depression.</a
+      >
+      Insecurity, anxiety, and fear of the unknown were rampant. For a design
+      class at UC San Diego, our goal was to create a resource for this
+      unprecedented time.
+      <h2>My team first focused on a broad question: How can we
+        provide food and supplies to vulnerable populations at the break of a
+        pandemic?</h2>
+    </p>
+</div>
+ 
+    <hr />
+    <div class="details">
+        <p ><strong>Team:</strong> Camille Townson, Stacey Chin, Quyen-Vi Nguyen, Mor Greenbaum</p>
+        <p ><strong>Strategies:</strong>
+           Interviews, Competitive Analysis, User Testing, Ethnographic
+          Research, Wireframing, Storyboarding, Prototyping
+        </p>
+        <p><strong>Tools:</strong>
+           Balsamiq, Figma</p>
+    </div>
+
+  </div>
+  <div class="section" id="user">
+    <h1>The User</h1>
+    <div class="img__container--header">
+      <img src="/harvestly/survey.png" alt="" id="survey" />
+    </div>
+    <p>
+        We placed great importance and spent a majority of our design time on <strong>user research.</strong> First, we conducted an online ethnography by observing users’ posts and comments on relevant Facebook groups, Reddit pages, and NextDoor communities. Then, we created a questionnaire and posted it the websites mentioned. Based on 25 responses, we crafted more specific questions and conducted video call interviews with five participants. Each participant was of a unique age bracket, location, and occupation. This research culminated in two <strong>stakeholder personas.</strong>
+    </p>
+  
+    <div class="persona">
+      <div class="img__container--persona">
+        <img src="/harvestly/brian.png" alt="" id="brian" />
+      </div>
+      <div class="img__container--persona">
+        <img src="/harvestly/jennifer.png" alt="" id="jennifer" />
+      </div>
+    </div>
+    <div class="content">
+        <p>Our <strong>preliminary research</strong> gave us valuable insight into what our users actually needed. From our ethnography, we learned plenty of resources for free food and supplies exist. Mutual aid networks are especially helpful and provide resources to the communities they belong to, no questions asked. The problem is that there is no <strong>centralized platform</strong> for our primary stakeholders to find existing food banks and events. The information was spread throughout Facebook groups, Google Docs, and singular, event-specific websites. Our primary stakeholder, Brian, needed an easy-to-use platform to access the existing avenues to free food and supplies.</p>
+     
+        <p>A <strong>secondary goal</strong> emerged after conducting user interviews. We spoke with multiple users who were comfortable with their access to essential goods, but felt a severe lack of <strong>community</strong> while social distancing. This tied into our previous findings about mutual aid. Instead of the top-to-bottom model of charity, <a href="https://www.vice.com/en/article/y3mkjv/what-is-mutual-aid-and-how-can-it-help-with-coronavirus">mutual aid.</a> operates on the framework of members of the community taking care of each other. In our case, Jennifer needed a way to feel connected to others and regain a sense of control over her life. </p>
+        <h2>Our new question: 
+          How can we mitigate food insecurity while bolstering community bonding?</h2>
+      </div>
+  </div>
+  <div class="section" id="design">
+    <h1>The Design Process</h1>
+    <div class="img__container--header">
+      <img src="/harvestly/research.png" alt="" id="research" />
+    </div>
+    <p>
+        We entered the design process by pulling the necessary features from competitors. Our most important features were the <strong>map</strong>, to visually depict nearby events; an <strong>activity feed</strong>, to categorically list every available resource; and <strong>messaging</strong>, to allow users to claim items and converse with community members.
+    </p>
+    <div class="img__container--sketches">
+      <div class="sketch">
+        <img src="/harvestly/sketch1.jpg" alt="" />
+      </div>
+      <div class="sketch">
+        <img src="/harvestly/sketch2.jpg" alt="" />
+      </div>
+      <div class="sketch">
+        <img src="/harvestly/sketch3.jpg" alt="" />
+      </div>
+    </div>
+    <div class="img__container--lofi">
+      <div class="lofi">
+        <img src="/harvestly/lofi1.png" alt="" />
+      </div>
+      <div class="lofi">
+        <img src="/harvestly/lofi2.png" alt="" />
+      </div>
+      <div class="lofi">
+        <img src="/harvestly/lofi3.png" alt="" />
+      </div>
+    </div>
+    <p>After implementing a  <strong>low-fidelity prototype</strong> on Balsamiq, we received vital critiques to reorganize our app.</p>
+    <ul>
+        <li>The information in the map and activity feeds are redundant and can be combined.</li>
+        <li>The map needs to be more discoverable; add more signifiers.</li>
+        <li>If messaging and community building are important parts of our platform, we should strengthen our profile customization feature as well.</li>
+        <li>There should be a way for users to share their own supplies without sacrificing personal privacy and posting their address.</li>
+    </ul>
+  </div>
+  <div class="section" id="visuals">
+    <h1>The Visuals</h1>
+    <p>
+        After gaining a better understanding of who our users are, we started thinking about how we wanted them to feel while using our platform. Terms like <strong>"community"</strong>
+        , <strong>"mutual aid"</strong>, <strong>"nourishment"</strong>, <strong>neighbors"</strong>, and <strong>"safety"</strong> arose in brainstorms. Our priority was  to create an app that     <strong>calmed users’ anxieties</strong>
+        about where to get food, both in its functionality and in its user interface. We also wanted to <strong>re-energize our users</strong> and employ a friendly atmosphere. Every aspect of our UI and branding— the colors, fonts, logo, and name — was created with these goals in mind.
+    </p>
+    <div class="img__container">
+      <div class="img__container--moodboard">
+        <img src="/harvestly/moodboard.png" alt="" id="moodboard" />
+      </div>
+      <div class="img__container--style">
+        <img src="/harvestly/style guide.png" alt="" id="style" />
+      </div>
+      
+    </div>
+
+
+  </div>
+  <div class="section" id="product">
+    <h1>The Product</h1>
+    <p>
+        After seven weeks of research, interviews, sketching, wireframes, and iteration, we presented <strong>Harvestly</strong>, a mobile application, to the class. To explore the full prototype, click   <a href="https://www.figma.com/proto/H9MwQ7AzlG8qYmQYe8oQIj/DSGN-100?node-id=70%3A1700&scaling=min-zoom">here.</a> 
+    </p>
+  
+    <div class="img__container--screens">
+      <div class="img__screen"><img src="/harvestly/feed.png" alt="" /></div>
+      <div class="img__screen">
+        <img src="/harvestly/feed_filter.png" alt="" />
+      </div>
+      <div class="img__screen">
+        <img src="/harvestly/feed_post.png" alt="" />
+      </div>
+    </div>
+<h2>Activity Feed</h2>
+<p>We renamed our main screen from the general “Home” to the more <strong>active</strong> word “Find”. The search function includes a menu to preselect certain <strong>filters</strong> while searching for posts. Users can <strong>toggle</strong> between this screen and the map view with the icon in the lower right corner.</p>
+
+    <div class="img__container--screens">
+      <div class="img__screen"><img src="/harvestly/map.png" alt="" /></div>
+      <div class="img__screen">
+        <img src="/harvestly/map_filter.png" alt="" />
+      </div>
+      <div class="img__screen">
+        <img src="/harvestly/map_post.png" alt="" />
+      </div>
+    </div>
+<h2>Map View</h2>
+    <p>
+        We <strong>categorized</strong> posts as either Food Banks (permanent resources) or Food Events (limited time only resources). To address privacy concerns, we implemented <strong>pick-up zones</strong>, public areas where users can meet to exchange goods. These three post types are differentiated through our color-coded <strong>legend</strong>, as well as tags on the post itself.
+    </p>
+    <div class="img__container--screens">
+      <div class="img__screen"><img src="/harvestly/newpost.png" alt="" /></div>
+      <div class="img__screen">
+        <img src="/harvestly/newpost_confirm.png" alt="" />
+      </div>
+      <div class="img__screen">
+        <img src="/harvestly/newpost_post.png" alt="" />
+      </div>
+    </div>
+<h2>Creating a New Post</h2>
+    <p>
+        Users can upload pictures, write a description, and choose a time span when creating new posts. From our low-fidelity prototype testing, we added a <strong>confirmation screen</strong> for pickup zones and the ability to choose which <strong>category</strong> your post falls under (Food Bank, Event, Pick Up). The “post” button only appears when the necessary information is added.
+    </p>
+    <div class="img__container--screens">
+      <div class="img__screen"><img src="/harvestly/profile.png" alt="" /></div>
+      <div class="img__screen">
+        <img src="/harvestly/profile_edit.png" alt="" />
+      </div>
+      <div class="img__screen">
+        <img src="/harvestly/profile_chat.png" alt="" />
+      </div>
+    </div>
+    <h2>Community Building</h2>
+    <p>
+        To connect with others, users can comment on posts or direct message one another. By adding a <strong>profile picture</strong> and <strong>bio</strong>, users can feel more connected to other Harvestly users they interact with. Our hope is that through messaging, users can form new relationships with their neighbors, even while social distancing and sheltering at home.
+    </p>
+  </div>
+  <div class="section" id="reflect">
+    <h1>Reflections</h1>
+    <p>
+        Our “final” product is anything but finalized. As well as conducting another round of user tests, we would want to <strong>implement additions</strong> to make our existing features more usable: 
+    </p>
+        <ul>
+            <li>        Address verification, to ensure users are local
+            </li>
+            <li>        Offload directions to pickup zones and events to other apps (e.g. Google Maps)
+            </li>
+            <li>        Implement user ability to report comments, posts, users, etc.
+            </li>
+            <li>        Rearrange the bottom navigational menu for maximum efficiency
+            </li>
+            <li>        Work on the search features on the activity feed
+            </li>
+        </ul>
+     
+  <p>   My biggest takeaway from this project was to <strong>involve users at every step</strong> of the design process. It was a great privilege to use my classmates as a sounding board and receive critiques from my professor on a weekly basis.</p>
+    <hr>
+    <p>I extend a huge thank you to my teammates and the DSGN 100 instructional staff at UC San Diego. I would also like to thank     <a href="https://www.mutualaidhub.org/">Mutual Aid Hub</a>
+        and     <a href="https://www.weallwegotsd.com/">We All We Got San Diego</a>
+        , two groups that taught me a lot about food redistribution and community organizing. I encourage anyone reading this to research how to incorporate mutual aid into their own life. 🧡</p>
+  </div>
+
+  <!-- Footer Section -->
+  <div class="footer__container">
+    <section class="social__media">
+      <div class="social__media--wrap">
+        <div class="footer__logo">
+          <a href="/./index.html" id="footer__logo"
+            ><img src="footer logo.png" alt="Zaara Khan"
+          /></a>
+        </div>
+        <p class="website__rights">Made with HTML, CSS, JavaScript, and ♥</p>
+        <div class="social__icons">
+          <a
+            href="https://github.com/zaarakhan"
+            class="social__icon--link"
+            target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/zaara-khan-2020/"
+            class="social__icon--link"
+            target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="app.js"></script>
+</body>

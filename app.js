@@ -54,3 +54,16 @@ const hideMobileMenu = () => {
 };
 menuLinks.addEventListener("click", hideMobileMenu);
 navLogo.addEventListener("click", hideMobileMenu);
+
+//Navbar animation on Harvestly page
+const navbar = document.querySelector(".navbarH");
+const prevScrollPos = window.pageYOffset;
+window.onscroll = function (e) {
+  var scrollY = window.pageYOffset || document.documentElement.scrollTop;
+
+  scrollY <= this.lastScroll
+    ? (navbar.style.visibility = "visible")
+    : (navbar.style.visibility = "hidden");
+
+  this.lastScroll = scrollY;
+};
