@@ -227,6 +227,7 @@
 }
 
 .hero__heading span {
+  font-style: italic;
   background: #91c499; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
