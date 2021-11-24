@@ -141,11 +141,12 @@
   }
   .navbar__menu.active {
     background: #fff;
-    top: 100%;
+    position: fixed;
+    height: calc(100vh - 77px);
+    top: 77px;
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 99;
-    height: 60vh;
     font-size: 1.6rem;
   }
   #navbar__logo {
@@ -661,14 +662,14 @@
 
 @media screen and (max-width: 480px) {
   .main__content h1 {
-    font-size: 2rem;
+    font-size: 1rem;
     margin-top: 3rem;
   }
   .main__content h2 {
-    font-size: 2rem;
+    font-size: 1rem;
   }
   .main__content p {
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-top: 2rem;
   }
   .main__btn {
@@ -915,7 +916,7 @@
   max-width: 100%;
 }
 .img__container--header img {
-  height: 30rem;
+  max-width: 80%;
 }
 .persona {
   display: grid;
@@ -939,6 +940,7 @@
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-content: center;
+  max-width: 100%;
   padding: 0 9rem;
   z-index: 1;
   text-align: center;
@@ -947,10 +949,10 @@
   max-width: 80%;
 }
 .img__container--moodboard img {
-  height: 400px;
+  max-width: 80%;
 }
 .img__container--style img {
-  height: 400px;
+  height: 200px;
 }
 .img__container--screens {
   display: grid;
@@ -958,15 +960,15 @@
   grid-column-gap: 10px;
   align-items: center;
   justify-content: center;
-  height: 90%;
-  z-index: 1;
-  max-width: 100%;
+  /* height: 90%;
+  /* z-index: 1;
+  /* max-width: 100%; */
   margin: 0 200px;
   padding: 30px 0;
   text-align: center;
 }
 .img__screen img {
-  height: 30rem;
+  height: 200px;
 }
 
 .img__container--sketches {
@@ -982,7 +984,7 @@
   text-align: center;
 }
 .sketch img {
-  width: 17rem;
+  max-width: 80%;
 }
 .img__container--lofi {
   display: grid;
@@ -997,14 +999,31 @@
   text-align: center;
 }
 .lofi img {
-  width: 17rem;
+  max-width: 80%;
 }
 @media screen and (max-width: 1100px) {
   .navbarH {
     width: 100%;
   }
+  .img__container--intro {
+    margin: 1rem;
+  }
   .img__container {
-    margin: 0 10rem 5rem;
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+  .img__container--moodboard {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+  .img__container--style {
+    max-width: 100%;
+  }
+  .img__container--moodboard img {
+    max-width: 70%;
+  }
+  .img__container--header {
+    margin: 1rem;
   }
   .content p,
   .content h2,
@@ -1033,25 +1052,17 @@
     font-size: 1rem;
     font-family: "Noto Sans", sans-serif;
   }
-
-  #survey img {
-    max-height: 20rem;
-    max-width: 100%;
-  }
   .persona {
     padding: 0 0rem;
   }
-  .img__container,
-  .img__container--screens,
+  .img__container--screens {
+    margin: 0;
+  }
+
   .img__container--sketches,
   .img__container--lofi {
-    margin: 0 2rem 5rem;
+    margin: 1rem;
     height: 100%;
-  }
-  .img__container--moodboard img,
-  .img__container--style img {
-    height: 20rem;
-    max-width: auto;
   }
 
   .img__container--persona img {
