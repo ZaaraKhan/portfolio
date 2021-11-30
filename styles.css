@@ -952,7 +952,7 @@
   max-width: 80%;
 }
 .img__container--style img {
-  height: 200px;
+  height: 400px;
 }
 .img__container--screens {
   display: grid;
@@ -964,11 +964,11 @@
   /* z-index: 1;
   /* max-width: 100%; */
   margin: 0 200px;
-  padding: 30px 0;
+  padding: 10px 0;
   text-align: center;
 }
 .img__screen img {
-  height: 200px;
+  height: 400px;
 }
 
 .img__container--sketches {
@@ -1021,6 +1021,12 @@
   }
   .img__container--moodboard img {
     max-width: 70%;
+  }
+  .img__screen img {
+    height: 200px;
+  }
+  .img__container--style img {
+    height: 200px;
   }
   .img__container--header {
     margin: 1rem;
