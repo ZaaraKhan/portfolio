@@ -221,7 +221,7 @@
 
 .hero__heading {
   font-size: 70px;
-  font-weight: normal;
+  /* font-weight: normal; */
   margin-bottom: 35px;
   color: #0d1821;
   font-family: "Didot", serif;
