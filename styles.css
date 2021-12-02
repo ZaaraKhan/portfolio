@@ -642,13 +642,13 @@
   .main__content h1 {
     font-size: 1.5rem;
     margin-top: 2rem;
-    margin-left: 0;
+    margin-left: 0rem;
   }
 
   .main__content h2 {
     font-size: 1rem;
     text-align: center;
-    margin-left: 0;
+    margin-left: 0rem;
   }
   .main__content p {
     font-size: 1rem;
@@ -665,9 +665,11 @@
   .main__content h1 {
     font-size: 1rem;
     margin-top: 3rem;
+    margin-left: 0rem;
   }
   .main__content h2 {
     font-size: 1rem;
+    margin-left: 0rem;
   }
   .main__content p {
     font-size: 1rem;
