@@ -215,7 +215,7 @@
   z-index: 1;
   width: 100%;
   max-width: 1300px;
-  padding: 0 50px;
+  /* padding: 0 px; */
   text-align: center;
 }
 
@@ -269,13 +269,14 @@
 
 @media screen and (max-width: 768px) {
   .hero {
-    padding-bottom: 10px;
+    padding-top: 7rem;
+    padding-bottom: 0;
   }
   .hero__container {
     padding: 0 50px;
   }
   .hero__heading {
-    font-size: 1rem;
+    font-size: 2.5rem;
   }
   .hero__description {
     font-size: 1rem;
@@ -285,7 +286,7 @@
     justify-content: center;
   }
   .hero__img--container img {
-    height: 250px;
+    height: 300px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -302,6 +303,15 @@
   .hero__container img {
     display: flex;
     justify-content: center;
+  }
+  .hero__heading {
+    font-size: 2rem;
+  }
+  .hero__description {
+    font-size: 1rem;
+  }
+  .hero__img--container img {
+    height: 250px;
   }
 }
 
@@ -449,12 +459,15 @@
 }
 
 @media screen and (max-width: 1300px) {
+  .services {
+    padding: 7rem 0;
+  }
   .services__wrapper {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .services__wrapper {
     grid-template-columns: 1fr;
   }
@@ -463,8 +476,23 @@
 .main {
   background-color: #fff;
   padding: 10rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
+.main h1 {
+  background-color: #0d1821;
+  background-image: linear-gradient(to top, #0d1821 0%, #0d1821 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  padding-bottom: 15px;
+  font-family: "Didot", serif;
+  font-size: 4rem;
+}
 .main__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -616,6 +644,9 @@
 
 /* Mobile Responsive */
 @media screen and (max-width: 1100px) {
+  .main {
+    padding: 10px 0;
+  }
   .main__container {
     display: grid;
     grid-template-columns: 1fr;
@@ -631,7 +662,7 @@
     justify-content: center;
   }
   .main__img--container img {
-    height: 250px;
+    height: 385px;
   }
 
   .main__content {
@@ -640,7 +671,7 @@
   }
 
   .main__content h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-top: 2rem;
     margin-left: 0rem;
   }
@@ -678,6 +709,9 @@
   .main__btn {
     padding: 12px 36px;
     margin: 2.5rem 0;
+  }
+  .main__img--container img {
+    height: 225px;
   }
 }
 /* Footer CSS */
@@ -786,6 +820,9 @@
   }
 }
 @media screen and (max-width: 480px) {
+  .footer__container {
+    padding: 1rem 0;
+  }
   .footer__link--items {
     margin: 0;
     padding: 10px;
